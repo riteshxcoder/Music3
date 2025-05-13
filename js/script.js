@@ -1,4 +1,4 @@
-   const encodedKey = "QUl6YVN5QlJ1azFZZTVZSU45dnIzMndFWnpnUXg4cEFNamVVTElZ";
+   const encodedKey = "api apna dalo";
     const API_KEY = atob(encodedKey);
     let currentSongIndex = 0;
     let songs = [];
