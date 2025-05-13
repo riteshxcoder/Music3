@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎵 Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+ <body onkeypress="handleKeyPress(event)">
+  <div class="toggle">
+    <input class="toggle-input" type="checkbox">
+    <div class="toggle-bg"></div>
+    <div class="toggle-switch">
+      <div class="toggle-switch-figure"></div>
+      <div class="toggle-switch-figureAlt"></div>
+    </div>
+  </div>
+
+  <header>
+    <h1>🎧 RITESH PLAYER</h1>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search for music...">
+    <button onclick="searchMusic()">Search</button>
+  </div>
+
+  <iframe id="player" allow="autoplay" allowfullscreen=""></iframe>
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="playPause()">⏯</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+
+  <ul id="song-list"></ul>
+
+
+    <script src="js/script.js"></script>
+
+
+</body></html>
